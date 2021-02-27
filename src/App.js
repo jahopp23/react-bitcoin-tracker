@@ -1,9 +1,11 @@
 import React from "react";
-import { render } from "react-dom";
 import { withStyles } from "@material-ui/core/styles";
 import Chart from "./chart";
-import { Navbar, Card, Container, Row } from 'react-bootstrap'
+import { Navbar, Container, Row, Col } from 'react-bootstrap';
 import { Btc } from 'react-cryptocoins';
+import { FaGithub } from 'react-icons/fa';
+import { ExternalLink } from 'react-external-link';
+
 
 
 
@@ -104,6 +106,8 @@ class App extends React.Component {
       <Btc style={{ marginRight: '0.25em'}}  />     
         Realtime Bitcoin Tracker
       </Navbar.Brand>
+     
+      
     </Navbar>
   
      
@@ -118,6 +122,25 @@ class App extends React.Component {
  
       
      </div>
+     <Container>
+       <Row>
+       
+       <Col style={{textAlign: 'center', height: '100'}}>
+
+       <ExternalLink href="https://www.github.com/jahopp23/react-bitcoin-tracker/tree/master" style={{ color: 'black'}}>
+       <h2><FaGithub></FaGithub></h2>
+       </ExternalLink>
+       
+         
+         <small>Built with React, Material UI, and Bootstrap</small>
+       <br />
+         <small>Deployed with Vercel</small>
+      
+       
+       </Col>
+
+       </Row>
+       </Container>
 
 
 
