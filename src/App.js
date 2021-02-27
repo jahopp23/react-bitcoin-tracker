@@ -104,7 +104,7 @@ class App extends React.Component {
       <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="#home">
       <Btc style={{ marginRight: '0.25em'}}  />     
-        Realtime Bitcoin Tracker
+        React Bitcoin Tracker
       </Navbar.Brand>
      
       
