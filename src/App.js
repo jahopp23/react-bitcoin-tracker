@@ -5,6 +5,8 @@ import { Navbar, Container, Row, Col } from 'react-bootstrap';
 import { Btc } from 'react-cryptocoins';
 import { FaGithub } from 'react-icons/fa';
 import { ExternalLink } from 'react-external-link';
+import Helmet from 'react-helmet';
+
 
 
 
@@ -101,6 +103,11 @@ class App extends React.Component {
 
     return (
       <>
+
+      <Helmet>
+       <title>React Bitcoin Tracker</title>
+        <meta name='description' content='React Bitcoin Tracker - Realtime BTC pricing, built with ReactJS, Material UI, Bootstrap, and Vercel.' />
+      </Helmet>
       <Navbar bg="dark" variant="dark">
       <Navbar.Brand href="#home">
       <Btc style={{ marginRight: '0.25em'}}  />     
